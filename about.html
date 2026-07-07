@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Havilah Forward Schools</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'havilah-green': '#2d5016',
+                        'havilah-light-green': '#4ade80',
+                        'havilah-dark-green': '#166534'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #2d5016 0%, #166534 100%);
+        }
+        .floating-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="w-10 h-10 bg-havilah-green rounded-full flex items-center justify-center mr-3">
+                            <span class="text-white font-bold text-lg">H</span>
+                        </div>
+                        <span class="text-havilah-green font-bold text-xl">Havilah Forward Schools</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-gray-600 hover:text-havilah-green px-3 py-2 font-medium transition-colors">Home</a>
+                        <a href="about.html" class="text-havilah-green hover:text-havilah-dark-green px-3 py-2 font-medium transition-colors">About</a>
+                        <a href="admission.html" class="text-gray-600 hover:text-havilah-green px-3 py-2 font-medium transition-colors">Admissions</a>
+                        <a href="contact.html" class="text-gray-600 hover:text-havilah-green px-3 py-2 font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-havilah-green hover:text-havilah-dark-green">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="index.html" class="text-gray-600 hover:text-havilah-green block px-3 py-2 font-medium">Home</a>
+                    <a href="about.html" class="text-havilah-green hover:text-havilah-dark-green block px-3 py-2 font-medium">About</a>
+                    <a href="admission.html" class="text-gray-600 hover:text-havilah-green block px-3 py-2 font-medium">Admissions</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-havilah-green block px-3 py-2 font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center fade-in">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
+                    About <span class="text-havilah-light-green">Havilah Forward Schools</span>
+                </h1>
+                <p class="text-xl sm:text-2xl text-green-100 max-w-3xl mx-auto leading-relaxed">
+                    Committed to Excellence in Education and Character Building Since Our Foundation
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="floating-animation">
+                    <div class="bg-white rounded-2xl shadow-xl p-8">
+                        <div class="text-center mb-6">
+                            <div class="w-16 h-16 bg-havilah-green rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-havilah-green">Our Mission</h3>
+                        </div>
+                        <p class="text-gray-700 text-lg leading-relaxed text-center">
+                            To lay a firm foundation upon which every child that goes through this institution would have an excellent academic pursuit. To train minds who would compete favorably and excel among equals wherever they find themselves. To leave a lifetime impact on any child that ever attends this institution.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="floating-animation" style="animation-delay: -3s;">
+                    <div class="bg-white rounded-2xl shadow-xl p-8">
+                        <div class="text-center mb-6">
+                            <div class="w-16 h-16 bg-havilah-green rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-havilah-green">Our Vision</h3>
+                        </div>
+                        <p class="text-gray-700 text-lg leading-relaxed text-center">
+                            To see our pupils and student bring glory to themselves and Nigeria. To be among the best 100 institutions in the world in neerer future. To be the leading educational institution that shapes future leaders through academic excellence, character development, and global competitiveness.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-havilah-green mb-4">Our Story</h2>
+                <div class="w-24 h-1 bg-havilah-light-green mx-auto"></div>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-havilah-green mb-6">Excellence Through Dedication</h3>
+                    <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                        Havilah Forward Schools was founded with a clear vision: to provide world-class education that prepares students not just academically, but also morally and socially for the challenges of tomorrow.
+                    </p>
+                    <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                        Since our establishment, we have maintained an unwavering commitment to excellence. Our near 100% success rate in WAEC and NECO examinations is a testament to our dedication to quality education and our students' hard work.
+                    </p>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        What sets us apart is our holistic approach to education - we don't just teach subjects, we build character, instill values, and prepare our students to be responsible global citizens.
+                    </p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8">
+                    <h4 class="text-xl font-bold text-havilah-green mb-6 text-center">Our Achievements</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 bg-havilah-light-green rounded-full mr-4 pulse-animation"></div>
+                            <span class="text-gray-700">Near 100% WAEC Success Rate</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 bg-havilah-light-green rounded-full mr-4 pulse-animation" style="animation-delay: 0.5s;"></div>
+                            <span class="text-gray-700">Near 100% NECO Success Rate</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 bg-havilah-light-green rounded-full mr-4 pulse-animation" style="animation-delay: 1s;"></div>
+                            <span class="text-gray-700">Hundreds of Students in Universities</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 bg-havilah-light-green rounded-full mr-4 pulse-animation" style="animation-delay: 1.5s;"></div>
+                            <span class="text-gray-700">Award-Winning Academic Programs</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 bg-havilah-light-green rounded-full mr-4 pulse-animation" style="animation-delay: 2s;"></div>
+                            <span class="text-gray-700">Strong Alumni Network</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-havilah-green mb-4">Our Core Values</h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    The principles that guide everything we do at Havilah Forward Schools
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow text-center">
+                    <div class="w-16 h-16 bg-havilah-green rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C20.832 18.477 19.246 18 17.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-havilah-green mb-3">Excellence</h3>
+                    <p class="text-gray-600">Striving for the highest standards in everything we do</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow text-center">
+                    <div class="w-16 h-16 bg-havilah-green rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-havilah-green mb-3">Integrity</h3>
+                    <p class="text-gray-600">Building character through honesty and moral uprightness</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow text-center">
+                    <div class="w-16 h-16 bg-havilah-green rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-havilah-green mb-3">Community</h3>
+                    <p class="text-gray-600">Fostering a supportive and inclusive learning environment</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow text-center">
+                    <div class="w-16 h-16 bg-havilah-green rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-havilah-green mb-3">Innovation</h3>
+                    <p class="text-gray-600">Embracing modern teaching methods and technology</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Team Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-havilah-green mb-4">Our Leadership Team</h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Experienced educators and administrators dedicated to student success
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-6 text-center hover:shadow-xl transition-shadow">
+                    <div class="w-20 h-20 bg-havilah-green rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-bold text-2xl">P</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-havilah-green mb-2">Principal</h3>
+                    <p class="text-gray-600 mb-3">Educational Leadership</p>
+                    <p class="text-sm text-gray-500">Leading with vision and dedication to academic excellence</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-6 text-center hover:shadow-xl transition-shadow">
+                    <div class="w-20 h-20 bg-havilah-green rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-bold text-2xl">VP</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-havilah-green mb-2">Vice Principal</h3>
+                    <p class="text-gray-600 mb-3">Academic Affairs</p>
+                    <p class="text-sm text-gray-500">Overseeing curriculum development and student progress</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-6 text-center hover:shadow-xl transition-shadow sm:col-span-2 lg:col-span-1">
+                    <div class="w-20 h-20 bg-havilah-green rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-bold text-2xl">HoD</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-havilah-green mb-2">Heads of Departments</h3>
+                    <p class="text-gray-600 mb-3">Subject Specialists</p>
+                    <p class="text-sm text-gray-500">Expert teachers leading Science, Arts, and Commerce departments</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 hero-gradient text-white">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-6">Join the Havilah Family Today</h2>
+            <p class="text-lg lg:text-xl text-green-100 mb-8 leading-relaxed">
+                Experience the difference that quality education and character building can make in your child's future.
+            </p>
+            <div class="flex justify-center">
+                <a href="tel:08023276874" class="bg-white text-havilah-green px-8 py-4 rounded-lg font-semibold text-lg hover:bg-green-50 transition-colors inline-block">
+                    Apply for Admission
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-havilah-dark-green text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+                <div class="sm:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 sm:w-10 sm:h-10 bg-havilah-light-green rounded-full flex items-center justify-center mr-3">
+                            <span class="text-havilah-green font-bold text-base sm:text-lg">H</span>
+                        </div>
+                        <span class="text-white font-bold text-lg sm:text-xl">Havilah Forward Schools</span>
+                    </div>
+                    <p class="text-green-200 mb-4 leading-relaxed text-sm sm:text-base">
+                        Committed to excellence in education and character building. Preparing students for global competitiveness and higher education success.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-base sm:text-lg mb-3 sm:mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-green-200 text-sm sm:text-base">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="admission.html" class="hover:text-white transition-colors">Admissions</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-base sm:text-lg mb-3 sm:mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-green-200 text-sm sm:text-base">
+                        <p>📧 havilah4wardschool@gmail.com</p>
+                        <p>📞 +234 802 327 6874</p>
+                        <p>📍  5, Havilah close old-ota road, moshalashi Bus/Stop. Alagbado. Lagos State</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-green-600 mt-8 pt-8 text-center text-green-200">
+                <p>&copy; 2024 Havilah Forward Schools. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97ddf819b466975f',t:'MTc1NzY2NTA1My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
